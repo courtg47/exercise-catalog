@@ -28,9 +28,9 @@ or the SDK. You also do not need to launch VirtualBox after installation.
 Windows users may be asked to grant network permissions to Vagrant or make a firewall exception. Be sure to allow this.
 
 ### Vagrantfile
-This file is included in this repo. After pulling the directory, make sure the Vagrantfile is in the same directory as Vagrant. Then, `cd` into it and run the command `vagrant up`.  Let it run, this will take a few minutes.
- 
-Now you’ll have a PostgreSQL server running in a Linux virtual machine. 
+This file is included in this repo. After pulling this repo, make sure the Vagrant directory is in the same directory as the Exercise Catalog project. Then, make sure the Vagrantfile is moved into the Vagrant directory. 
+
+From the command line, `cd` into the Vagrant directory and run the command `vagrant up`.  Let it run, this will take a few minutes.
 
 ## Configuration
 
@@ -40,11 +40,12 @@ Now you’ll have a PostgreSQL server running in a Linux virtual machine.
 * Download the [data here](https://drive.google.com/open?id=1q54oM2LTM3x_dHnCocNjbJfb8Z-iP-ln)
 * Unzip the file after downloading. The file inside it is called `exercisecatalog.sql`.  Put this file into the vagrant directory, 
   which is shared with the VM.
-* To load the data: `cd` into the `vagrant` directory and use the command `psql -d exercisecatalog -f exercisecatalog.sql`
+* On the command line in the VM, go to `psql` then `sql CREATE DATABASE exercisecatalog;`
+* To load the data into the database: use the command `psql -d exercisecatalog -f exercisecatalog.sql`
 
 Running the above command will connect to your installed DB server and execute the SQL commands in the downloaded file. 
 
-## Running the program & Open the Application
+## Running the program & Opening the Application
 
 * `cd` into the directory containing the Vagrantfile, then run `vagrant ssh` to login to the Virtual Machine. 
 * `cd` into `/vagrant`
