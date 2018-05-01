@@ -1,10 +1,7 @@
 # Exercise Catalog Web Application
 
 This project is a fully functional exercise catalog application which allows users to view various exercise categories 
-and popular exercises within them, including a title, a description of how to perform the exercise, and a YouTube video demonstrating
-the exercise. In addition to viewing, users can add their own exercises, as well as edit and delete exercises (but only 
-exercises they themselves have created). Users must login with Google Sign-In in order to add, edit, and delete. This project
-fulfills the Item Catalog Application project for Udacity's Full Stack Web Developer program.
+and popular exercises within them, including a title, a description, and a YouTube video demonstration. In addition to viewing, users can add, edit, and delete their own exercises. Users must login with Google Sign-In in order to add, edit, and delete. This project fulfills the Item Catalog Application project for Udacity's Full Stack Web Developer program.
 
 ## Technologies Utilized
 
