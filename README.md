@@ -37,10 +37,10 @@ From the command line, `cd` into the Vagrant directory and run the command `vagr
 * Logging into the Virtual Machine: using your terminal or git bash, `cd` into the `vagrant` directory and run the command 
 `vagrant ssh`.  
 * Next, run the command `cd /vagrant` then `ls` and you will see the Vagrantfile you downloaded.
-* Download the [data here](https://drive.google.com/open?id=1q54oM2LTM3x_dHnCocNjbJfb8Z-iP-ln)
+* Download the database [data here.](https://drive.google.com/open?id=1q54oM2LTM3x_dHnCocNjbJfb8Z-iP-ln)
 * Unzip the file after downloading. The file inside it is called `exercisecatalog.sql`.  Put this file into the vagrant directory, 
   which is shared with the VM.
-* On the command line in the VM, go to `psql` then `sql CREATE DATABASE exercisecatalog;`
+* On the command line in the VM, go to `psql` then `CREATE DATABASE exercisecatalog;`
 * To load the data into the database: use the command `psql -d exercisecatalog -f exercisecatalog.sql`
 
 Running the above command will connect to your installed DB server and execute the SQL commands in the downloaded file. 
